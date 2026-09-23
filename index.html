@@ -1,0 +1,335 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerraviaMC | Geopolitical Earth Towny</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand">
+                <img src="assets/logo.png" alt="TerraviaMC Logo" class="brand-logo">
+                <span class="brand-name">TERRAVIA<span>MC</span></span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="https://terraviamc.net">Home</a>
+                <a href="/features">Features</a>
+                <a href="/faq">FAQ</a>
+                <a href="/docs">Docs</a>
+                <a href="https://map.terraviamc.net" target="_blank">Map</a>
+                <a href="/community">Community</a>
+                <a href="https://discord.gg/nkvjsukhuc" target="_blank">Support</a>
+                <a href="https://store.terraviamc.net" target="_blank" class="nav-btn-store">
+                    <i class="fa-solid fa-cart-shopping"></i> Store
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-card">
+            <div class="status-badge">
+                <span class="badge-dot"></span>
+                <span id="player-count">Checking status..</span>
+            </div>
+
+            <h1 class="hero-title">Forge Your Empire on <span id="typewriter"></span></h1>
+            <p class="hero-description">
+                A premier Geopolitical Earth Towny network. Settle claims, engage in high-stakes diplomacy, and master a dynamic player-driven economy.
+            </p>
+            <div class="hero-actions">
+                <button class="ip-btn" id="hero-copy-btn" onclick="copyIP()"> <span class="ip-text">IP: TerraviaMC.org</span> </button>
+                <a href="https://discord.gg/zspeG4HgS" target="_blank" class="discord-btn">Join Discord</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="section">
+        <div class="section-header">
+            <span class="section-tag">Core Mechanics</span>
+            <h2>Designed for Builders & Strategists</h2>
+        </div>
+
+        <div class="card-grid">
+            <div class="feature-card">
+                <div class="card-tag">01</div>
+                <h3>Real-World Scale Map</h3>
+                <p>Establish settlements across an accurately scaled, 1:500 scale Earth map with rich regional resources to discover and trade.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="card-tag">02</div>
+                <h3>Towny & Politics</h3>
+                <p>Form custom towns, merge into sprawling empires, set taxation, and negotiate alliances or wage strategic war.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="card-tag">03</div>
+                <h3>Player Economy</h3>
+                <p>Build town treasuries, trade goods across trade routes, and earn gold through voting, shops, and conquest.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+        <div class="section-header">
+            <span class="section-tag">Information</span>
+            <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-glass-card">
+            <div class="faq-grid">
+                <!-- Left Column -->
+                <div class="faq-column">
+                    <div class="faq-item">
+                        <h3>How do I join TerraviaMC?</h3>
+                        <p>Launch <strong>Minecraft Java Edition (version 1.20+),</strong> navigate to Multiplayer, click Add Server, and enter <strong>TerraviaMC.org</strong>.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Is the server Bedrock compatible?</h3>
+                        <p>No. Bedrock players cannot join, as the server is only <strong>Java compatible</strong>.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Are there Moderators?</h3>
+                        <p>Yes! Our <strong>skilled and talented moderators</strong> can help you if someone breaks the rules, someone claim-blocks you, and more!</p>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="faq-column">
+                    <div class="faq-item">
+                        <h3>How does the Earth Map work?</h3>
+                        <p>Our server features a <strong>custom 1:500 scale real-world Earth map</strong> where you can claim real geography to construct your town or nation.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Is TerraviaMC Pay-to-Win?</h3>
+                        <p>No. All gameplay progression and town land claims are made using <strong>the in-game currency (Gold)</strong>. Which cannot be bought online—players have to <strong>mine, vote, or trade to earn gold.</strong></p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Does TerraviaMC Have Ranks?</h3>
+                        <p>Yes! Players <strong>can purchase Ranks</strong> to add a special look to their Nametag or show a <strong>token of appreciation</strong> towards the TMC Team! (No special items are given, only cosmetics such as tags.)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="community" class="section">
+        <div class="community-container">
+            <div class="community-card">
+                <div class="community-media">
+                    <img src="assets/logo.png" alt="TerraviaMC Community Logo" class="community-logo">
+                </div>
+                <div class="community-text">
+                    <h2>Connect with us!</h2>
+                    <p>
+                        Join our <a href="https://discord.gg/zspeG4HgS" target="_blank">Discord server</a> and join our community! Stay updated with what's happening, new updates, and changelogs!
+                    </p>
+                    <p>
+                        Information such as links and guides are listed on the Discord server! Advertise your towns and nations in our Adverts channel!
+                    </p>
+                </div>
+            </div>
+
+            <div class="discord-widget-wrapper">
+                <iframe 
+                    src="https://discord.com/widget?id=1548802549208055978&theme=dark" 
+                    width="100%" 
+                    height="100%" 
+                    allowtransparency="true" 
+                    frameborder="0" 
+                    sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 TerraviaMC Network. <b>Made with ❤️ by TerraviaMC Team</b></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerraviaMC | Geopolitical Earth Towny</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand">
+                <img src="assets/logo.png" alt="TerraviaMC Logo" class="brand-logo">
+                <span class="brand-name">TERRAVIA<span>MC</span></span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="https://terraviamc.net">Home</a>
+                <a href="/features">Features</a>
+                <a href="/faq">FAQ</a>
+                <a href="/docs">Docs</a>
+                <a href="https://map.terraviamc.net" target="_blank">Map</a>
+                <a href="/community">Community</a>
+                <a href="https://discord.gg/nkvjsukhuc" target="_blank">Support</a>
+                <a href="https://store.terraviamc.net" target="_blank" class="nav-btn-store">
+                    <i class="fa-solid fa-cart-shopping"></i> Store
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-card">
+            <div class="status-badge">
+                <span class="badge-dot"></span>
+                <span id="player-count">Checking status..</span>
+            </div>
+
+            <h1 class="hero-title">Forge Your Empire on <span id="typewriter"></span></h1>
+            <p class="hero-description">
+                A premier Geopolitical Earth Towny network. Settle claims, engage in high-stakes diplomacy, and master a dynamic player-driven economy.
+            </p>
+            <div class="hero-actions">
+                <button class="ip-btn" id="hero-copy-btn" onclick="copyIP()"> <span class="ip-text">IP: TerraviaMC.org</span> </button>
+                <a href="https://discord.gg/zspeG4HgS" target="_blank" class="discord-btn">Join Discord</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="section">
+        <div class="section-header">
+            <span class="section-tag">Core Mechanics</span>
+            <h2>Designed for Builders & Strategists</h2>
+        </div>
+
+        <div class="card-grid">
+            <div class="feature-card">
+                <div class="card-tag">01</div>
+                <h3>Real-World Scale Map</h3>
+                <p>Establish settlements across an accurately scaled, 1:500 scale Earth map with rich regional resources to discover and trade.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="card-tag">02</div>
+                <h3>Towny & Politics</h3>
+                <p>Form custom towns, merge into sprawling empires, set taxation, and negotiate alliances or wage strategic war.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="card-tag">03</div>
+                <h3>Player Economy</h3>
+                <p>Build town treasuries, trade goods across trade routes, and earn gold through voting, shops, and conquest.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+        <div class="section-header">
+            <span class="section-tag">Information</span>
+            <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-glass-card">
+            <div class="faq-grid">
+                <!-- Left Column -->
+                <div class="faq-column">
+                    <div class="faq-item">
+                        <h3>How do I join TerraviaMC?</h3>
+                        <p>Launch <strong>Minecraft Java Edition (version 1.20+),</strong> navigate to Multiplayer, click Add Server, and enter <strong>TerraviaMC.org</strong>.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Is the server Bedrock compatible?</h3>
+                        <p>No. Bedrock players cannot join, as the server is only <strong>Java compatible</strong>.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Are there Moderators?</h3>
+                        <p>Yes! Our <strong>skilled and talented moderators</strong> can help you if someone breaks the rules, someone claim-blocks you, and more!</p>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="faq-column">
+                    <div class="faq-item">
+                        <h3>How does the Earth Map work?</h3>
+                        <p>Our server features a <strong>custom 1:500 scale real-world Earth map</strong> where you can claim real geography to construct your town or nation.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Is TerraviaMC Pay-to-Win?</h3>
+                        <p>No. All gameplay progression and town land claims are made using <strong>the in-game currency (Gold)</strong>. Which cannot be bought online—players have to <strong>mine, vote, or trade to earn gold.</strong></p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Does TerraviaMC Have Ranks?</h3>
+                        <p>Yes! Players <strong>can purchase Ranks</strong> to add a special look to their Nametag or show a <strong>token of appreciation</strong> towards the TMC Team! (No special items are given, only cosmetics such as tags.)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="community" class="section">
+        <div class="community-container">
+            <div class="community-card">
+                <div class="community-media">
+                    <img src="assets/logo.png" alt="TerraviaMC Community Logo" class="community-logo">
+                </div>
+                <div class="community-text">
+                    <h2>Connect with us!</h2>
+                    <p>
+                        Join our <a href="https://discord.gg/zspeG4HgS" target="_blank">Discord server</a> and join our community! Stay updated with what's happening, new updates, and changelogs!
+                    </p>
+                    <p>
+                        Information such as links and guides are listed on the Discord server! Advertise your towns and nations in our Adverts channel!
+                    </p>
+                </div>
+            </div>
+
+            <div class="discord-widget-wrapper">
+                <iframe 
+                    src="https://discord.com/widget?id=1548802549208055978&theme=dark" 
+                    width="100%" 
+                    height="100%" 
+                    allowtransparency="true" 
+                    frameborder="0" 
+                    sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 TerraviaMC Network. <b>Made with ❤️ by TerraviaMC Team</b></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+>>>>>>> aaddc5a2b2d0db98740406874e715cf468a61231
