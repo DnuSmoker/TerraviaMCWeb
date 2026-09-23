@@ -1,0 +1,340 @@
+<<<<<<< HEAD
+:root {
+    --bg-dark: #0b0f19;
+    --card-bg: rgba(15, 23, 42, 0.75);
+    --card-border: rgba(255, 255, 255, 0.08);
+    --sky-blue: #38bdf8;
+    --text-main: #f8fafc;
+    --text-sub: #cbd5e1;
+    --text-muted: #94a3b8;
+    --font-primary: 'Plus Jakarta Sans', -apple-system, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Hero Header with Map Background */
+.rules-hero {
+    padding: 9rem 1.5rem 4rem 1.5rem;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(7, 10, 16, 0.5) 0%, var(--bg-dark) 100%), 
+                url('../assets/earthmap.png') center/cover no-repeat;
+}
+
+.rules-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.rules-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.rules-subtext {
+    font-size: 1.05rem;
+    color: var(--text-sub);
+    line-height: 1.7;
+}
+
+.rules-subtext a {
+    color: var(--sky-blue);
+    text-decoration: underline;
+}
+
+/* Main Content Container */
+.rules-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 6rem 1.5rem;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.section-divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    margin: 2.5rem 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.01em;
+}
+
+/* Rule Card Container */
+.rule-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 2rem 2.25rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    margin-bottom: 2rem;
+}
+
+/* Subsection Title */
+.subsection-pill {
+    color: var(--sky-blue);
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.rule-description {
+    font-size: 1rem;
+    color: var(--text-sub);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* List Groups */
+.rule-group {
+    margin-bottom: 1.5rem;
+}
+
+.rule-group:last-child {
+    margin-bottom: 0;
+}
+
+.list-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.list-title.not-allowed {
+    color: #f87171;
+}
+
+.list-title.allowed {
+    color: #4ade80;
+}
+
+.rule-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.rule-list li {
+    font-size: 0.98rem;
+    color: var(--text-sub);
+    line-height: 1.6;
+}
+
+.rule-list li strong {
+    color: var(--text-main);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    border-top: 1px solid var(--card-border);
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.footer strong {
+    color: var(--text-main);
+=======
+:root {
+    --bg-dark: #0b0f19;
+    --card-bg: rgba(15, 23, 42, 0.75);
+    --card-border: rgba(255, 255, 255, 0.08);
+    --sky-blue: #38bdf8;
+    --text-main: #f8fafc;
+    --text-sub: #cbd5e1;
+    --text-muted: #94a3b8;
+    --font-primary: 'Plus Jakarta Sans', -apple-system, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Hero Header with Map Background */
+.rules-hero {
+    padding: 9rem 1.5rem 4rem 1.5rem;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(7, 10, 16, 0.5) 0%, var(--bg-dark) 100%), 
+                url('../assets/earthmap.png') center/cover no-repeat;
+}
+
+.rules-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.rules-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.rules-subtext {
+    font-size: 1.05rem;
+    color: var(--text-sub);
+    line-height: 1.7;
+}
+
+.rules-subtext a {
+    color: var(--sky-blue);
+    text-decoration: underline;
+}
+
+/* Main Content Container */
+.rules-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 6rem 1.5rem;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.section-divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    margin: 2.5rem 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.01em;
+}
+
+/* Rule Card Container */
+.rule-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 2rem 2.25rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    margin-bottom: 2rem;
+}
+
+/* Subsection Title */
+.subsection-pill {
+    color: var(--sky-blue);
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.rule-description {
+    font-size: 1rem;
+    color: var(--text-sub);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* List Groups */
+.rule-group {
+    margin-bottom: 1.5rem;
+}
+
+.rule-group:last-child {
+    margin-bottom: 0;
+}
+
+.list-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.list-title.not-allowed {
+    color: #f87171;
+}
+
+.list-title.allowed {
+    color: #4ade80;
+}
+
+.rule-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.rule-list li {
+    font-size: 0.98rem;
+    color: var(--text-sub);
+    line-height: 1.6;
+}
+
+.rule-list li strong {
+    color: var(--text-main);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    border-top: 1px solid var(--card-border);
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.footer strong {
+    color: var(--text-main);
+>>>>>>> aaddc5a2b2d0db98740406874e715cf468a61231
+}
