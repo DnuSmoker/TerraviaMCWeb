@@ -1,4 +1,184 @@
-<<<<<<< HEAD
+.guide-hero {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 9rem 1.5rem 4rem;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(7, 10, 16, 0.5) 0%, var(--bg-dark) 100%), 
+                url('../assets/earthmap.png') center/cover no-repeat;
+}
+
+.guide-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.guide-hero h1 {
+    font-size: 2.75rem;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+    color: #ffffff;
+}
+
+.guide-hero p {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Layout Grid Container */
+.guide-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem 5rem;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 2.5rem;
+    align-items: start;
+}
+
+/* Sticky Sidebar Navigation */
+.sidebar {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 1.5rem;
+    position: sticky;
+    top: 6rem;
+    backdrop-filter: blur(10px);
+}
+
+.sidebar h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.6rem 0.8rem;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.sidebar a i {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    width: 20px;
+    text-align: center;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    color: #ffffff;
+    background: rgba(99, 102, 241, 0.15);
+}
+
+.sidebar a:hover i,
+.sidebar a.active i {
+    color: #6366f1;
+}
+
+/* Main Content Area */
+.guide-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.guide-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    scroll-margin-top: 6rem;
+}
+
+.guide-card h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.guide-card h2 i {
+    color: #6366f1;
+}
+
+.guide-card p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.guide-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.guide-card ul li {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.guide-card code {
+    background: rgba(99, 102, 241, 0.15);
+    color: #a5b4fc;
+    padding: 0.2rem 0.5rem;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 0.9rem;
+    border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+/* Info Alert Box */
+.info-box {
+    background: rgba(99, 102, 241, 0.08);
+    border: 1px solid rgba(99, 102, 241, 0.25);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    margin-top: 1rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+    .guide-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: relative;
+        top: 0;
+    }
+
 /* Guide Hero Section */
 .guide-hero {
     width: 100%;
@@ -180,187 +360,4 @@
         position: relative;
         top: 0;
     }
-=======
-/* Guide Hero Section */
-.guide-hero {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 9rem 1.5rem 4rem;
-    text-align: center;
-    background: linear-gradient(180deg, rgba(7, 10, 16, 0.5) 0%, var(--bg-dark) 100%), 
-                url('../assets/earthmap.png') center/cover no-repeat;
-}
-
-.guide-hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.guide-hero h1 {
-    font-size: 2.75rem;
-    font-weight: 800;
-    margin-bottom: 0.75rem;
-    color: #ffffff;
-}
-
-.guide-hero p {
-    font-size: 1.15rem;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-/* Layout Grid Container */
-.guide-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem 5rem;
-    display: grid;
-    grid-template-columns: 280px 1fr;
-    gap: 2.5rem;
-    align-items: start;
-}
-
-/* Sticky Sidebar Navigation */
-.sidebar {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 16px;
-    padding: 1.5rem;
-    position: sticky;
-    top: 6rem;
-    backdrop-filter: blur(10px);
-}
-
-.sidebar h3 {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 1rem;
-    padding-bottom: 0.75rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.sidebar a {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    color: rgba(255, 255, 255, 0.7);
-    text-decoration: none;
-    font-size: 0.95rem;
-    font-weight: 500;
-    padding: 0.6rem 0.8rem;
-    border-radius: 8px;
-    transition: all 0.2s ease-in-out;
-}
-
-.sidebar a i {
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.5);
-    width: 20px;
-    text-align: center;
-}
-
-.sidebar a:hover,
-.sidebar a.active {
-    color: #ffffff;
-    background: rgba(99, 102, 241, 0.15);
-}
-
-.sidebar a:hover i,
-.sidebar a.active i {
-    color: #6366f1;
-}
-
-/* Main Content Area */
-.guide-content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.guide-card {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 16px;
-    padding: 2rem;
-    backdrop-filter: blur(10px);
-    scroll-margin-top: 6rem;
-}
-
-.guide-card h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-.guide-card h2 i {
-    color: #6366f1;
-}
-
-.guide-card p {
-    color: rgba(255, 255, 255, 0.8);
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
-
-.guide-card ul {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-
-.guide-card ul li {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.95rem;
-    line-height: 1.5;
-}
-
-.guide-card code {
-    background: rgba(99, 102, 241, 0.15);
-    color: #a5b4fc;
-    padding: 0.2rem 0.5rem;
-    border-radius: 6px;
-    font-family: monospace;
-    font-size: 0.9rem;
-    border: 1px solid rgba(99, 102, 241, 0.2);
-}
-
-/* Info Alert Box */
-.info-box {
-    background: rgba(99, 102, 241, 0.08);
-    border: 1px solid rgba(99, 102, 241, 0.25);
-    border-radius: 12px;
-    padding: 1rem 1.25rem;
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 0.95rem;
-    margin-top: 1rem;
-}
-
-/* Mobile Responsive */
-@media (max-width: 900px) {
-    .guide-container {
-        grid-template-columns: 1fr;
-    }
-
-    .sidebar {
-        position: relative;
-        top: 0;
-    }
->>>>>>> aaddc5a2b2d0db98740406874e715cf468a61231
 }
