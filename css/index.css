@@ -656,10 +656,12 @@ html {
     z-index: 0;
     pointer-events: none;
     background: 
-        radial-gradient(circle at 12.5% 50%, rgba(0, 234, 255, 0.35) 0%, transparent 45%),   /* DnuSmoker: Owner (#00eaff) */
-        radial-gradient(circle at 37.5% 50%, rgba(255, 206, 91, 0.40) 0%, transparent 45%),  /* GGGoldRush: Senior Helper (#ffce5b) */
-        radial-gradient(circle at 62.5% 50%, rgba(220, 0, 255, 0.35) 0%, transparent 45%),  /* ItzRetroBoi14: Developer (#dc00ff) */
-        radial-gradient(circle at 87.5% 50%, rgba(176, 111, 0, 0.45) 0%, transparent 45%);   /* cheezus69: Helper (#b06f00) */
+        radial-gradient(circle at 8.33% 50%, rgba(0, 234, 255, 0.35) 0%, transparent 40%),   /* DnuSmoker: Owner */
+        radial-gradient(circle at 25.00% 50%, rgba(255, 206, 91, 0.40) 0%, transparent 40%),  /* GGGoldRush: Senior Helper */
+        radial-gradient(circle at 41.66% 50%, rgba(220, 0, 255, 0.35) 0%, transparent 40%),  /* ItzRetroBoi14: Developer */
+        radial-gradient(circle at 58.33% 50%, rgba(255, 206, 91, 0.40) 0%, transparent 40%),  /* cheezus69: Senior Helper */
+        radial-gradient(circle at 75.00% 50%, rgba(176, 111, 0, 0.35) 0%, transparent 40%),   /* BagsMain: Helper */
+        radial-gradient(circle at 91.66% 50%, rgba(176, 111, 0, 0.35) 0%, transparent 40%);   /* AkemiAhmya: Helper */
     filter: blur(20px);
     opacity: 0.85;
 }
@@ -681,8 +683,8 @@ html {
 .staff-info-grid {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.25rem;
 }
 
 .staff-member {
