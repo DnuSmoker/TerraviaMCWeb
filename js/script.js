@@ -62,7 +62,7 @@ async function fetchServerStatus() {
     const badgeElement = document.getElementById("status-badge");
     if (!statusElement || !badgeElement) return;
 
-    const serverIP = "TerraviaMC.org";
+    const serverIP = "play.terraviamc.org";
 
     badgeElement.className = "status-badge checking";
     statusElement.innerText = "Checking status..";
